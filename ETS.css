@@ -21,6 +21,8 @@ body{
     border-radius: 10px;
     display: flex; 
     flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    align-items:center; 
 
 }
 .schoolBag{
@@ -30,16 +32,14 @@ body{
    
 }
 .grid{
-    border:solid 1px black;
     background-color: lightblue;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    font-size: 16px; 
      
 }
 .grid:hover{
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: aliceblue;
 }
 
