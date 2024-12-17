@@ -1,0 +1,63 @@
+body{
+    font-family: "brandon-grotesque", sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+    height: auto;
+    width: 750px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: goldenrod;
+    font-size:x-large;
+    margin-top: 0;
+    padding: 5px;
+}
+.container {
+    height: 400px;
+    width:  400px;
+    border: solid 10px black;
+    border-radius: 10px;
+    display: flex; 
+    flex-wrap: wrap; 
+
+}
+.schoolBag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+   
+}
+.grid{
+    border:solid 1px black;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 16px; 
+     
+}
+.grid:hover{
+    opacity: 0.8;
+    background-color: aliceblue;
+}
+
+.staionary{
+   
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.staionary > * {
+    margin: 5px 0;
+}
+.staionary button{
+    margin-left: 5px;    
+}
+.staionary button:hover{
+    background-color: rgb(0, 119, 255);
+    color: beige;
+}
