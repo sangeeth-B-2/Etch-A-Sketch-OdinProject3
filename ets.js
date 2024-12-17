@@ -6,7 +6,8 @@ let resetBtn = document.getElementById('resetBtn');
 
 
 
-let colorName;
+let colorName = favColor.value || '#ff0000';
+let n = inputBox.value || 4;
 
 favColor.addEventListener('input', () => {
     colorName = favColor.value;
@@ -14,35 +15,34 @@ favColor.addEventListener('input', () => {
 
 })
 
-
 inputSumit.addEventListener('click', () => {
-    let n = inputBox.value;
+
+    n = inputBox.value || 4;
+    colorName = favColor.value || '#ff0000';
+
     parentDiv.innerHTML = "";
     let childSize = (parentDiv.clientWidth / n);
     console.log(childSize);
+    
     //looping for grid
     for (let j = 1; j <= n; j++) {
         for (let i = 1; i <= n; i++) {
-
             let childDiv = document.createElement('div');
+            parentDiv.appendChild(childDiv);
             childDiv.classList.add('grid');
             childDiv.style.width = childSize + 'px';
             childDiv.style.height = childSize + 'px';
-            parentDiv.appendChild(childDiv);
-
-            let childGrid = parentDiv.children;
-
-            Array.from(childGrid).forEach(child => {
-                child.addEventListener('click', (event) => {
-                    if (colorName) {
-
-                        event.target.style.backgroundColor = colorName;
-                    }
-                });
+            childDiv.addEventListener('click', (event) => {
+                if (colorName) {
+                    event.target.style.backgroundColor = colorName;
+                }
+            
             });
-
+            
         }
     }
+    
+
 });
 
 

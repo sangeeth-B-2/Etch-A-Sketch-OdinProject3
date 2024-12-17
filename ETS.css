@@ -31,8 +31,12 @@ body{
     justify-content:space-around
    
 }
+/* #sumit{
+    height: 20px;
+    width: 60px;
+} */
 .grid{
-    background-color: lightblue;
+    background-color: #add8e6;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -40,7 +44,10 @@ body{
 }
 .grid:hover{
     opacity: 0.7;
-    background-color: aliceblue;
+    background-color: #0052ce;
+    transition: 500ms ;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
 }
 
 .staionary{
